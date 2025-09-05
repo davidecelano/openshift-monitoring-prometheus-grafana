@@ -211,6 +211,8 @@ objects:
         wildcardPolicy: None
     deployment:
       spec:
+        strategy:
+          type: Recreate
         template:
           spec:
             serviceAccountName: ${APPMON_SERVICEACCOUNT}
